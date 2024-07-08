@@ -18,7 +18,7 @@ selesai = 'PYTHON_DONE'
 
 #fungsi untuk kirim sinyal deteksi OK
 def hasil_check_ok():
-    with omron.NSeries('192.168.250.1') as eip_conn:
+    with omron.NSeries(plc_ip_address) as eip_conn:
         eip_conn.write_variable(var_ok, 1)
         eip_conn.write_variable(var_ng, 0)
 
@@ -34,7 +34,7 @@ def hasil_check_ok():
 
 #fungsi untuk kirim sinyal deteksi NG
 def hasil_check_ng():
-    with omron.NSeries('192.168.250.1') as eip_conn:
+    with omron.NSeries(plc_ip_address) as eip_conn:
         eip_conn.write_variable(var_ng, 1)
         eip_conn.write_variable(var_ok, 0)
 
@@ -51,7 +51,7 @@ def hasil_check_ng():
 #fungsi untuk tunggu oprator colek LS
 #akan di gunkan untuk mengirim hasil deteksi ke PLC
 def tunggu_trigger_ls():
-    with omron.NSeries('192.168.250.1') as eip_conn:
+    with omron.NSeries(plc_ip_address) as eip_conn:
         data = eip_conn.read_variable(ls_trigger)
         while data != 1:
             data = eip_conn.read_variable(ls_trigger)
@@ -61,7 +61,7 @@ def tunggu_trigger_ls():
 #fungsi untuk memulai program
 #di trigger oleh ls work in
 def mulai_program():
-    with omron.NSeries('192.168.250.1') as eip_conn:
+    with omron.NSeries(plc_ip_address) as eip_conn:
         #tunggu LS work in ke colek saat masukin work
         while eip_conn.read_variable(mulai) != 1:
             time.sleep(0.1)
@@ -74,7 +74,7 @@ def mulai_program():
 #fungsi untuk menandai sudah selesai scanning dan kirim data
 def sudah_selesai():
     #saat deteksi sudah selesai kirim data sudah oke panggil program ini untuk reset start scanning
-    with omron.NSeries('192.168.250.1') as eip_conn:
+    with omron.NSeries(plc_ip_address) as eip_conn:
         eip_conn.write_variable(var_ng, 0)
         eip_conn.write_variable(var_ok, 0)
         eip_conn.write_variable(selesai, 1)
@@ -87,7 +87,26 @@ def sudah_selesai():
 def tunggu_variabel(myvar, wait_value):
     #myvar = variabel yang ingin di tunggu
     #wait_value = value yang ingin di tunggu
-    #myvar bertipe string, dan wait_value bertipe biner 0 dan 1
-    while myvar != wait_value:
-        time.sleep(0.1)
+    print(f'waiting {myvar} to be {wait_value}')
+    with omron.NSeries(plc_ip_address) as eip_conn:
+        while eip_conn.read_variable(myvar) != wait_value:
+            time.sleep(0.1)
     return True
+
+def baca_variabel(myvar):
+    data = 0
+    print(f'membaca variabel {myvar}')
+    with omron.NSeries(plc_ip_address) as eip_conn:
+        data = eip_conn.read_variable(myvar)
+        time.sleep(0.1)
+    print(f'variabel {myvar} = {data}')
+    return data
+
+def tulis_variabel(myvar, value):
+    print(f'tulis variabel {myvar} = {value}')
+    with omron.NSeries(plc_ip_address) as eip_conn:
+        eip_conn.write_variable(myvar, value)
+        time.sleep(0.1)
+    print(f'sudah di tulis variabel {myvar} = {value}')
+    return True
+    
