@@ -1,0 +1,117 @@
+<mxfile host="app.diagrams.net" modified="2024-07-08T03:34:43.695Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="7vUdF2vBAvwy_Kl0q-TY" version="24.6.4" type="device">
+  <diagram name="Page-1" id="CaZnguO_egI5raiSDNSv">
+    <mxGraphModel dx="2049" dy="533" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-1" value="python" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="125" y="50" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="LR-Avj_ex9RnSvam0f-8-2" target="LR-Avj_ex9RnSvam0f-8-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-2" value="work masuk mesin,&lt;div&gt;ls_konfirmasi work ON&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="55" y="140" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-5" value="python mulai scanning, dan simpan hasil scan di variabel A" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="310" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="LR-Avj_ex9RnSvam0f-8-6" target="LR-Avj_ex9RnSvam0f-8-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="LR-Avj_ex9RnSvam0f-8-6" target="LR-Avj_ex9RnSvam0f-8-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-6" value="operator colek&lt;div&gt;ls start?&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="115" y="390" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.541;entryY=-0.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="LR-Avj_ex9RnSvam0f-8-1" target="LR-Avj_ex9RnSvam0f-8-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="LR-Avj_ex9RnSvam0f-8-5" target="LR-Avj_ex9RnSvam0f-8-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="LR-Avj_ex9RnSvam0f-8-11" target="LR-Avj_ex9RnSvam0f-8-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-11" value="kirim data setelah scanning selesai" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="530" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-13" value="tunggu 30detik" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="230" y="530" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="LR-Avj_ex9RnSvam0f-8-13" target="LR-Avj_ex9RnSvam0f-8-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-16" value="NO" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="410" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-17" value="YES" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="55" y="410" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="LR-Avj_ex9RnSvam0f-8-19" target="LR-Avj_ex9RnSvam0f-8-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-19" value="kosongkan hasil scan di python" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="230" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-23" value="done" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="680" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-25" value="data di terima PLC" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="600" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="LR-Avj_ex9RnSvam0f-8-25" target="LR-Avj_ex9RnSvam0f-8-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="LR-Avj_ex9RnSvam0f-8-28" target="LR-Avj_ex9RnSvam0f-8-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-28" value="PLC" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="530" y="50" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="LR-Avj_ex9RnSvam0f-8-33" target="LR-Avj_ex9RnSvam0f-8-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-33" value="reset memory hasil deteksi python,&lt;div&gt;set memory python start_scanning&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="480" y="235" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="LR-Avj_ex9RnSvam0f-8-34" target="LR-Avj_ex9RnSvam0f-8-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-34" value="work masuk mesin,&lt;div&gt;ls_konfirmasi work ON&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="470" y="140" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="LR-Avj_ex9RnSvam0f-8-37" target="LR-Avj_ex9RnSvam0f-8-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-37" value="reset memory hasil deteksi python" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="480" y="310" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="LR-Avj_ex9RnSvam0f-8-39" target="LR-Avj_ex9RnSvam0f-8-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-39" value="oprator colek ls_start,&lt;div&gt;(sekaligus instruksi&amp;nbsp;&lt;/div&gt;&lt;div&gt;minta hasil deteksi python)&lt;/div&gt;" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="470" y="390" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-41" value="simpan data dari python ke memory" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="480" y="510" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="LR-Avj_ex9RnSvam0f-8-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-47" value="jadikan data sebagai referensi judgement" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="480" y="590" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-49" value="done" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="530" y="670" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="LR-Avj_ex9RnSvam0f-8-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="LR-Avj_ex9RnSvam0f-8-47" target="LR-Avj_ex9RnSvam0f-8-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
