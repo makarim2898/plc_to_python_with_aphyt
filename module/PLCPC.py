@@ -105,8 +105,9 @@ def baca_variabel(myvar):
 def tulis_variabel(myvar, value):
     print(f'tulis variabel {myvar} = {value}')
     with omron.NSeries(plc_ip_address) as eip_conn:
-        eip_conn.write_variable(myvar, value)
-        time.sleep(0.1)
+        while eip_conn.read_variable(myvar) != value:
+            eip_conn.write_variable(myvar, value)
+            time.sleep(0.1)
     print(f'sudah di tulis variabel {myvar} = {value}')
     return True
     
