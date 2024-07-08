@@ -1,3 +1,14 @@
+'''
+# hasil_check_ok() untuk kirim sinyal work ok dan tunggu konfirmasi dari PLC; returning true
+# hasil_check_ng() untuk kirim sinyal work ng dan tunggu konfirmasi dari PLC; returning true
+# tunggu_trigger_ls() menunggu ls start di colek operator; returning true
+# mulai_inspeksi() untuk memberi sinyal ke plc bahwa python sudah mulai inspeksi; returning true
+# selesai_inspeksi() untuk memberi sinyal ke plc bahwa python sudah selesai inspeksi; returning true
+# tunggu_variabel(myvar, wait_value) untuk menunggu variabel tertentu dengan value tertentu; returning true
+# baca_variabel(myvar) untuk membaca variabel; returning value
+# tulis_variabel(myvar, myvalue) untuk menulis variabel; returning true
+
+'''
 import time
 from aphyt import omron
 #module time untuk memberi waktu tunggu
@@ -60,7 +71,7 @@ def tunggu_trigger_ls():
 
 #fungsi untuk memulai program
 #di trigger oleh ls work in
-def mulai_program():
+def mulai_inspeksi():
     with omron.NSeries(plc_ip_address) as eip_conn:
         #tunggu LS work in ke colek saat masukin work
         while eip_conn.read_variable(mulai) != 1:
@@ -72,7 +83,7 @@ def mulai_program():
 
 
 #fungsi untuk menandai sudah selesai scanning dan kirim data
-def sudah_selesai():
+def selesai_inspeksi():
     #saat deteksi sudah selesai kirim data sudah oke panggil program ini untuk reset start scanning
     with omron.NSeries(plc_ip_address) as eip_conn:
         eip_conn.write_variable(var_ng, 0)
