@@ -1,4 +1,3 @@
-import module.PLCPC as PLCPC
+import module.PLCPC as PLC
 
-data = PLCPC.tunggu_trigger_ls()
-print(data)
+PLC.test_modul_crot()

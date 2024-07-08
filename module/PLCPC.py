@@ -121,4 +121,7 @@ def tulis_variabel(myvar, value):
             time.sleep(0.1)
     print(f'sudah di tulis variabel {myvar} = {value}')
     return True
-    
+
+def test_modul_crot():
+    print('ini modul plc python')
+    return True
